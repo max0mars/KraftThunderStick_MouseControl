@@ -1,4 +1,9 @@
 # KraftThunderStick_MouseControl
 
-Uses an arduino Nano to read signals from the Kraft Thunderstick and send it through USB COM port. The Python script reads the incoming data and translates it into mouse movement and left click.
-Right Clicking the mouse will end the python script incase the control goes awry
+This allows a computer mouse to be controlled using a Kraft Thunder Stick which is 1990s game controller. The controller is wired up to an arduino and then the arduino is connected to the computer via usb. 
+
+The controller uses variable resistors attached to the controller axles. The arduino measures the voltage coming from a voltage divider circuit attached to the variable resistors.
+
+Because the Arduino Nano does not have the capabilities to move a computer mouse, a python script must be run to recieve the voltage readings from the arduino. It uses the library "serial" to read data from the usb port and "mouse" to control the mouse.
+
+Right clicking the computer mouse will stop the python script in case you lose control of the mouse.
