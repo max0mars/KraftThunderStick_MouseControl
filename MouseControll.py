@@ -1,9 +1,9 @@
 import serial
 import mouse
 
-# brown is x
-# Orange is y
-# Black is slide
+# brown wire is x
+# Orange wire is y
+# Black wire is slide
 
 fast = 60
 medium = 25
@@ -85,7 +85,6 @@ def moveMouse(v):
         mouse.release("left")
     
     last = v[3]
-    #print(str(v[0]) + ", " + str(v[1]) + ", " + str(v[3]))
     mouse.move(x*mult, y*mult, False)
 
 
@@ -95,7 +94,6 @@ mouse.on_right_click(flip)
 myString = ""
 while run:
     reading = True
-    #while reading:
     readIn = ""
     try: 
         readIn = s.read().decode()
