@@ -6,5 +6,5 @@ The controller uses variable resistors attached to the controller axles. The ard
 
 Because the Arduino Nano does not have the capabilities to move a computer mouse, a python script must be run to recieve the voltage readings from the arduino. It uses the library "serial" to read data from the usb port and "mouse" to control the mouse.
 
-Right clicking the computer mouse will stop the python script in case you lose control of the mouse.
+Right clicking the computer mouse will stop the python script in case you lose control.
 ![Controller](https://github.com/user-attachments/assets/f2e5a826-3aa0-41e5-95c9-5e996afda998)
